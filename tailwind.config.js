@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         customYellow: "#FCDC1C",
+        customham:"#EFA901",
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],

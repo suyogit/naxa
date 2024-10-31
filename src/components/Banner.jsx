@@ -15,8 +15,8 @@ const Banner = () => {
         onMouseLeave={() => setIsHovered(false)} 
       >
         <span className="pr-2 font-bold text-sm font-montserrat  text-center">
-          We have been working on several initiatives during the
-          Jajarkot-Rukum Earthquake Response 2023. Check them out
+          We Have Been Working On Several Initiatives During The
+          Jajarkot-Rukum Earthquake Response 2023. Check Them Out
         </span>
         <i className={` transition-opacity duration-100 ${isHovered ? 'opacity-100' : 'opacity-0'} `}>
           <img src={arrow_right} alt="Arrow" />
