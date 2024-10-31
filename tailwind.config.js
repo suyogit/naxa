@@ -6,6 +6,8 @@ export default {
       colors: {
         customYellow: "#FCDC1C",
         customham:"#EFA901",
+        customback:"#F4F4F4",
+        customitem:"#E9EBFF"
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
