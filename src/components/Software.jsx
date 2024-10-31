@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Rightcontent from "./Rightcontent";
+import Leftcontent from "./Leftcontent";
 
 const Software = () => {
   const [services, setServices] = useState([]);
@@ -13,8 +15,9 @@ const Software = () => {
           throw new Error("Network response was not ok");
         }
         const data = await res.json();
-        console.log(data)
-        setServices(data);
+        // console.log(data);
+        const sortedData = data.sort((a, b) => a.service_order - b.service_order);
+        setServices(sortedData);
       } catch (error) {
         setError(error.message);
       } finally {
@@ -25,7 +28,6 @@ const Software = () => {
     fetchData();
   }, []);
 
-
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -35,16 +37,35 @@ const Software = () => {
   }
   return (
     <div>
-    {/* <h1>Software Services</h1>
-    <ul>
-      {services.map((service) => (
-        <li key={service.id}> 
-          {service.title} 
-        </li>
-      ))}
-    </ul> */}
-  </div>
-  )
+      <h1></h1>
+      <ul>
+        {services.map((service) => (
+          <li key={service.id}>
+            <div className="bg-customback ">
+            {service.service_order % 2 !== 0 ? ( 
+                <Rightcontent
+                  description1={service.description1}
+                  description2={service.description2}
+                  icon={service.icon}
+                  photo={service.photo}
+                  title={service.title}
+                />
+              ) : (
+                <Leftcontent
+                  description1={service.description1}
+                  description2={service.description2}
+                  icon={service.icon}
+                  photo={service.photo}
+                  title={service.title}
+                />
+              )}
+             
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default Software;

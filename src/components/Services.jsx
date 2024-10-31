@@ -1,5 +1,4 @@
 import Intro from "./Intro";
-import Rightcontent from "./Rightcontent";
 import Software from "./Software";
 
 const Services = () => {
@@ -7,11 +6,6 @@ const Services = () => {
     <>
       <Intro />
       <Software />
-      <div className="bg-customback">
-      <Rightcontent/>
-      </div>
-
-
     </>
   );
 };
