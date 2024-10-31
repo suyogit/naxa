@@ -5,9 +5,12 @@ import Banner from "./components/Banner";
 const App = () => {
   return (
     <div className=""> 
+    <div className="bg-services bg-cover bg-right bg-no-repeat">
     <Banner/>
     <Header />
     <Outlet />
+    </div>
+  
   </div>
   );
 };

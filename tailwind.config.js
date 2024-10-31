@@ -10,6 +10,9 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      backgroundImage: {
+        'services': "url('./src/assets/bg.jpg')", 
+      },
     },
   },
   plugins: [],

@@ -34,7 +34,7 @@ const Header = () => {
 
             </Link> */}
             <div className="relative group">
-              <button className="ml-2 mr-2 text-lg px-4">
+              <button className="ml-2 mr-2 text-lg px-4 flex items-center">
                 Portfolio <span className="text-xs">▼</span>
               </button>
               <div className="absolute hidden group-hover:flex flex-col bg-white shadow-lg rounded mt-1">
@@ -48,8 +48,8 @@ const Header = () => {
             </div>
 
             <div className="relative group">
-              <button className="ml-2 mr-2 text-lg px-4">
-                Portfolio <span className="text-xs">▼</span>
+              <button className="ml-2 mr-2 text-lg px-4 flex items-center">
+                Company <span className="text-xs">▼</span>
               </button>
               <div className="absolute hidden group-hover:flex flex-col bg-white shadow-lg rounded mt-1 ">
                 <Link to="/" className="px-4 py-2 hover:bg-gray-100">
@@ -70,7 +70,7 @@ const Header = () => {
               <h2 className="ml-2 mr-2 text-lg px-4">GeoAI</h2>
             </Link>
             <div className="relative group">
-              <button className="ml-2 mr-2 text-lg px-4">
+              <button className="ml-2 mr-2 text-lg px-4 flex items-center whitespace-nowrap">
                 Events & Media <span className="text-xs">▼</span>
               </button>
               <div className="absolute hidden group-hover:flex flex-col bg-white shadow-lg rounded mt-1">
@@ -94,7 +94,7 @@ const Header = () => {
 
           {/* hamburger icon  */}
           <div
-            className="block lg:hidden mr-7 cursor-pointer   "
+            className="block lg:hidden mr-7 cursor-pointer "
             onClick={toggleMenu}
           >
             <div className="h-1 w-8 bg-customham mb-1"></div>
