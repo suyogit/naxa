@@ -13,7 +13,7 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
       },
       backgroundImage: {
-        'services': "url('./src/assets/bg.jpg')", 
+        'service': "url('@/assets/bg.jpg')",
       },
     },
   },
